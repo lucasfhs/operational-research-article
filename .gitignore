@@ -218,3 +218,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Dados convertidos e artefatos de execução; origens.json permanece versionável.
+/src/data/*.parquet
+/resultados/

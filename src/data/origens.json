@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "data_format": "sscflp.instances.v1",
+  "created_utc": "2026-11-07T19:27:40.087856+00:00",
+  "description": "Uma linha por instância; vetores e matriz de custos são colunas numéricas aninhadas float64. Somente a proveniência usa JSON textual.",
+  "original_instances": 108,
+  "available_instances": 106,
+  "sources": [
+    {
+      "family": "cookie_factory",
+      "origin": "real",
+      "provider": "CommaLAB — Università di Pisa",
+      "source_page": "https://commalab.di.unipi.it/datasets/mex/",
+      "reference": {
+        "bibtex_key": "ahuja2004",
+        "doi": "10.1287/mnsc.1030.0193"
+      },
+      "original": {
+        "file": "saiwa.tex",
+        "url": "https://commalab.di.unipi.it/files/Data/mexch/saiwa.tex",
+        "downloaded_utc": "2026-11-07T18:53:01.572350+00:00",
+        "sha256": "3793a13f03eb7e544b6cc4a29f0d6d9ab81624c9cc52c65f109c6bd49c70638b",
+        "bytes": 19414
+      },
+      "original_instances": 1,
+      "rights": {
+        "redistribution": "No explicit redistribution licence verified; retain source attribution",
+        "status": "not_verified"
+      },
+      "conversion": {
+        "converted_utc": "2026-11-07T19:27:40.087856+00:00",
+        "parser": "pisa_facility_major_v1",
+        "numeric_type": "float64",
+        "cost_basis": "total_per_customer",
+        "cost_scaling": "none",
+        "matrix_layout": "facility_by_customer",
+        "padding": "Only terminal NUL/whitespace padding removed; no numeric values discarded",
+        "review_status": "format_checked_pending_domain_review"
+      },
+      "excluded": [],
+      "parquet": {
+        "file": "saiwa.parquet",
+        "sha256": "ffba5d42d7d41a0f1c0cc634c8e311d04208ae2b1adf2bd7937c909eca17aef2",
+        "bytes": 9537,
+        "rows": 1,
+        "instances_sha256": "76d8ec43431f27485747ff6c25747c3210c3bedf6be6bae5ca339225c0aa2822",
+        "schema": "sscflp.instances.v1",
+        "compression": "zstd",
+        "pyarrow_version": "26.0.1"
+      }
+    },
+    {
+      "family": "holmberg",
+      "origin": "synthetic",
+      "provider": "CommaLAB — Università di Pisa",
+      "source_page": "https://commalab.di.unipi.it/datasets/mex/",
+      "reference": {
+        "bibtex_key": "holmberg1999",
+        "doi": "10.1016/S0377-2217(98)00008-3"
+      },
+      "original": {
+        "file": "HolmbergData.tar.Z",
+        "url": "https://commalab.di.unipi.it/files/Data/mexch/HolmbergData.tar.Z",
+        "downloaded_utc": "2026-11-07T18:53:02.266645+00:00",
+        "sha256": "f57ca5b4b01d9c78391344c26d49476ffb1a23f539d37e6a671d89b63ad592e0",
+        "bytes": 401959
+      },
+      "original_instances": 71,
+      "rights": {
+        "redistribution": "No explicit redistribution licence verified; retain source attribution",
+        "status": "not_verified"
+      },
+      "conversion": {
+        "converted_utc": "2026-11-07T19:27:40.087856+00:00",
+        "parser": "pisa_facility_major_v1",
+        "numeric_type": "float64",
+        "cost_basis": "total_per_customer",
+        "cost_scaling": "none",
+        "matrix_layout": "facility_by_customer",
+        "padding": "Only terminal NUL/whitespace padding removed; no numeric values discarded",
+        "review_status": "format_checked_pending_domain_review"
+      },
+      "excluded": [
+        {
+          "name": "p26",
+          "source_member": "tesi/CapWarehouse/Instances/p26",
+          "original_sha256": "30f356575f4c3bdb7d679dd4f345d3405b5090e2456b0ab5343cc4064b568088",
+          "reason": "Contagem/dimensões incompatíveis com o layout de Pisa"
+        },
+        {
+          "name": "p47",
+          "source_member": "tesi/CapWarehouse/Instances/p47",
+          "original_sha256": "0a09a249265e947d06dfe3a7deab140c5e91c1f95efbc9cd48adb5e90b628d5c",
+          "reason": "NUL interno ou dados após preenchimento"
+        }
+      ],
+      "parquet": {
+        "file": "holmberg.parquet",
+        "sha256": "f5b4c2694dff00066064ad9c9b716d5576f51d3f15263a3c9d5452af84714cf3",
+        "bytes": 749748,
+        "rows": 69,
+        "instances_sha256": "b8ab2d21847dfae39b367feeafe2dedcbadca940cb4acadf593aa404e4dad36f",
+        "schema": "sscflp.instances.v1",
+        "compression": "zstd",
+        "pyarrow_version": "26.0.1"
+      }
+    },
+    {
+      "family": "beasley",
+      "origin": "synthetic",
+      "provider": "CommaLAB — Università di Pisa",
+      "source_page": "https://commalab.di.unipi.it/datasets/mex/",
+      "reference": {
+        "bibtex_key": "ahuja2004",
+        "doi": "10.1287/mnsc.1030.0193"
+      },
+      "original": {
+        "file": "BeasleyData.zip",
+        "url": "https://commalab.di.unipi.it/files/Data/mexch/BeasleyData.zip",
+        "downloaded_utc": "2026-11-07T18:53:07.814572+00:00",
+        "sha256": "fadde413d0f98c57690f5af37371c37235cda11c2b7df517d2b52feabd4ee369",
+        "bytes": 6813154
+      },
+      "original_instances": 36,
+      "rights": {
+        "redistribution": "No explicit redistribution licence verified; retain source attribution",
+        "status": "not_verified"
+      },
+      "conversion": {
+        "converted_utc": "2026-11-07T19:27:40.087856+00:00",
+        "parser": "pisa_facility_major_v1",
+        "numeric_type": "float64",
+        "cost_basis": "total_per_customer",
+        "cost_scaling": "none",
+        "matrix_layout": "facility_by_customer",
+        "padding": "Only terminal NUL/whitespace padding removed; no numeric values discarded",
+        "review_status": "format_checked_pending_domain_review"
+      },
+      "excluded": [],
+      "parquet": {
+        "file": "beasley.parquet",
+        "sha256": "de26005057941e482958cb4ab59453a64df2bba064568bffd59127f4b3ee6d09",
+        "bytes": 9433335,
+        "rows": 36,
+        "instances_sha256": "4b1f58644cb53c1c461e690c779aa003041e1dd44a2c4b814f037352395ad5e5",
+        "schema": "sscflp.instances.v1",
+        "compression": "zstd",
+        "pyarrow_version": "26.0.1"
+      }
+    }
+  ]
+}
